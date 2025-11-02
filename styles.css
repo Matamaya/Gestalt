@@ -1,0 +1,159 @@
+:root {
+    --primary-color: #5b8fc7;
+    --bg-light: #dedede;
+    --bg-secondary: #f8f9fa;
+    --text-color: #212529;
+    --border-radius: 12px;
+}
+
+[data-bs-theme="dark"] {
+    --primary-color: #7ba7d9;
+    --bg-light: #212529;
+    --bg-secondary: #2d3238;
+    --text-color: #f8f9fa;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #5b8fc7 !important;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link.active {
+    color: #b4e9ff !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+}
+
+/* Parallax Sections */
+.section-parallax {
+    min-height: 400px;
+        height: 80vh;
+
+    background-image: url('./img/pat2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;    
+    color: var(--text-color);
+}
+
+/* Sections */
+.section-content {
+    min-height: 400px;
+    height: 80vh;
+}
+
+.example-box {
+    display: flex;
+    justify-content: center;
+    border-style:none;
+}
+
+.example-box img{
+    border-radius: 15px;
+    width: 100%;
+    height: 400px;
+}
+
+/* Theme Toggle */
+#theme-toggle {
+    border-style: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#theme-icon {
+    font-size: 1.5rem;
+}
+
+/* Dark mode adjustments */
+[data-bs-theme="dark"] .navbar, footer {
+    background-color: #09121c !important;
+}
+
+[data-bs-theme="dark"] .bg-light {
+    background-color: var(--bg-secondary) !important;
+}
+
+[data-bs-theme="dark"] .bg-white {
+    background-color: #2d3238 !important;
+}
+
+[data-bs-theme="dark"] .section-parallax {
+    /* Texto blanco en tema oscuro */
+    color: #f8f9fa;
+}
+
+[data-bs-theme="dark"] .blockquote-footer {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.blockquote-footer{
+    background-color: none!important;
+}
+
+[data-bs-theme="dark"] .section-parallax{
+    min-height: 500px;
+    background: url('./img/pat1.avif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+[data-bs-theme="light"] footer{
+    background-color: #5b8fc7 !important;
+}
+
+h1, h2 {
+    line-height: 1.2;
+}
+
+p {
+    font-weight: bold !important;
+}
+
+/* Mobile: desactivar parallax */
+@media (max-width: 768px) {
+    .section-parallax {
+        background-attachment: scroll;
+    }
+}

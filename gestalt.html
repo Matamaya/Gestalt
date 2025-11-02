@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyes de la Gestalt en Diseño Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-gestalt" data-bs-offset="70">
+    
+    <!-- Navbar -->
+    <nav id="navbar-gestalt" class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">Gestalt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#proximidad">Proximidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#semejanza">Semejanza</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#continuidad">Continuidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cierre">Cierre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#figura-fondo">Figura–fondo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#simetria">Simetría</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pregnancia">Pregnancia</a></li>
+                </ul>
+                <button id="theme-toggle" class="btn ms-3" aria-label="Cambiar tema">
+                    <span id="theme-icon">☾</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero-section d-flex align-items-center justify-content-center text-center">
+        <div class="container">
+            <h1 class="display-1 fw-bold mb-3">Leyes de la Gestalt</h1>
+            <blockquote class="blockquote text-center mx-auto mt-5 py-4" style="max-width: 700px;">
+                <p class="mb-4 fw-normal">El término Gestalt proviene del alemán y se traduce como “forma” o “configuración”. Representa cómo el cerebro organiza los datos sensoriales para crear una imagen coherente.</p>
+                <p class="mb-4 fw-normal">El corazón de la Gestalt se resume en su famoso axioma:</p>
+                <div class="blockquote-footer fs-5">“El todo es más que la suma de sus partes.”</footer>
+            </blockquote>
+        </div>
+    </header>
+
+    <!-- Sección 1: Proximidad -->
+    <section id="proximidad" class="section-content py-5 bg-body-secondary">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">1. Proximidad</h2>
+                    <p class="lead mb-4 fw-normal fw-normal">Los elementos que se encuentran cerca unos de otros tienden a ser percibidos como una única unidad o grupo, incluso si son diferentes en forma o color.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="example-box p-4 rounded">
+                        <img src="./img/proximity.png" alt="Ejemplo de la ley de Proximidad">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: Semejanza -->
+    <section id="semejanza" class="section-parallax d-flex align-items-center py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="example-box p-4 rounded ">
+                        <img src="./img/similarity.png" alt="Ejemplo de la ley de Semejanza">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">2. Semejanza</h2>
+                    <p class="lead mb-4 fw-normal">Los elementos que comparten características visuales (forma, color, tamaño, textura) tienden a ser agrupados automáticamente.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: Continuidad -->
+    <section id="continuidad" class="section-content py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">3. Continuidad</h2>
+                    <p class="lead mb-4 fw-normal">Los elementos que siguen un patrón o una dirección percibida tienden a agruparse juntos, priorizando las líneas fluidas sobre los cambios abruptos o quebrados.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="example-box p-4 rounded">
+                        <img src="./img/continuation.png" alt="Ejemplo de la ley de Continuidad">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4: Cierre-->
+    <section id="cierre" class="section-content py-5 bg-body-secondary">
+        <div class="container">
+            <div class="row align-items-center"> 
+                <div class="col-lg-6">
+                    <div class="example-box p-4 rounded">
+                       <img src="./img/closure.png" alt="Ejemplo de la ley de Cierre">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">4. Cierre</h2>
+                    <p class="lead mb-4 fw-normal">Ante una figura incompleta o un contorno no cerrado, el cerebro tiende a “cerrarla” automáticamente para crear una forma significativa y completa.</p>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 5: Figura-fondo -->
+    <section id="figura-fondo" class="section-parallax d-flex align-items-center py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">5. Figura–fondo</h2>
+                    <p class="lead mb-4 fw-normal">Establece que, al percibir un objeto, la conciencia siempre lo separa en dos elementos: la Figura, en donde se centra la atención. Y el Fondo, que se siente menos definido y se expande por detrás</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="example-box p-4 rounded">    
+                        <img src="./img/figure.png" alt="Ejemplo de la ley de Figura-Fondo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 6: Simetría y orden -->
+    <section id="simetria" class="section-content py-5 bg-body-secondary">
+        <div class="container">
+            <div class="row align-items-center"> <div class="col-lg-6">
+                    <div class="example-box p-4 rounded">
+                        <img src="./img/symmetry.png" alt="Ejemplo de la ley de Simetría">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">6. Simetría y orden</h2>
+                    <p class="lead mb-4 fw-normal">El cerebro tiende a percibir las imágenes simétricas como un solo elemento cohesionado, incluso si los elementos están separados.</p>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 7: Experiencia -->
+    <section id="experiencia" class="section-content py-5 bg-body">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">7. Experiencia</h2>
+                    <p class="lead mb-4 fw-normal">La percepción está influenciada y, a menudo, condicionada por la experiencia previa y la familiaridad. Percibimos lo que nos resulta más significativo o conocido.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="example-box p-4 rounded">
+                        <img src="./img/experience.png" alt="Ejemplo de la ley de Experiencia">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 8: Pregnancia -->
+    <section id="pregnancia" class="section-parallax d-flex align-items-center py-5">
+        <div class="container">
+            <div class="row align-items-center"><div class="col-lg-6">
+                    <div class="example-box p-4 rounded">
+                        <img src="./img/simplicity.png" alt="Ejemplo de la ley de Pregnancia">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">8. Pregnancia (Prägnanz)</h2>
+                    <p class="lead mb-4 fw-normal">El término alemán Prägnanz se traduce como “pregnancia” o “buena forma”. Ante la ambigüedad, nuestro cerebro elige la interpretación más simple. </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-4">
+        <div class="container text-center">
+            <p class="mb-1 fw-normal">Estudiante: Mateo Amaya</p>
+            <p class="mb-1 fw-normal">Módulo: Diseño de Interfaces Web</p>
+            <p class="mb-0 fw-normal">Curso: 2º DAW - 2024/2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
